@@ -5,14 +5,14 @@ A representation of numeric intervals (also known as *ranges*.)
 
 These can be thoughts of as a pair of number, or as the set of all numbers that fall between them.
 
-See also [Wikipedia on intervals](https://en.wikipedia.org/wiki/Interval_(mathematics)).
+See also [Wikipedia on intervals][WP].
+[WP]: https://en.wikipedia.org/wiki/Interval_(mathematics)
 
 @docs Interval
 @docs empty, full, isFull, isEmpty
 @docs orderToInterval, ordersToIntervals, intervalToOrders
 @docs map
 @docs intersection, hull
-
 -}
 
 import Interval.EndPoint exposing (..)
