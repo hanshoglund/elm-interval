@@ -7,7 +7,7 @@ module Interval.EndPoint (
   ) where
 {-| Defines endpoints for intervals.
 
-    See also <https://en.wikipedia.org/wiki/Extended_real_number_line>.
+    This is an [extended real number line](https://en.wikipedia.org/wiki/Extended_real_number_line).
 
 @docs EndPoint
 @docs maxEndPoint, minEndPoint, mapEndpoint

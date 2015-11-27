@@ -5,6 +5,8 @@ A representation of numeric intervals (also known as *ranges*.)
 
 These can be thoughts of as a pair of number, or as the set of all numbers that fall between them.
 
+See also [Wikipedia on intervals](https://en.wikipedia.org/wiki/Interval_(mathematics)).
+
 @docs Interval
 @docs empty, full, isFull, isEmpty
 @docs orderToInterval, ordersToIntervals, intervalToOrders
@@ -51,7 +53,7 @@ intervalToOrders (Interval { min, max }) =
 map : (a -> b) -> Interval a -> Interval b
 map f (Interval a) = Interval { min = mapEndpoint f a.min, max = mapEndpoint f a.max }
 
-{-| Intersection (overlap) of two intervals. -}
+{-| The intersection of two intervals. If the intervals overlap, this is the common part. If not, this is the empty interval. -}
 intersection : Interval comparable -> Interval comparable -> Interval comparable
 intersection (Interval a) (Interval b) = Interval { min = maxEndPoint a.min b.min, max = minEndPoint a.max b.max }
 
