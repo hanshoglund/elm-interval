@@ -20,13 +20,13 @@ import Interval.EndPoint exposing (..)
 {-| An open interval. -}
 type Interval a = Interval { min : EndPoint a, max : EndPoint a }
 
-{-| The interval containing no numbers (the empty set). -}
--- Identity for `hull`.
+{-| The interval containing no numbers (the empty set).
+    Identity for `hull`. -}
 empty : Interval a
 empty = Interval { min = PosInf, max = NegInf }
 
 {-| The interval containing all numbers (the set of extended reals).
--- Identity for `intersection`. -}
+    Identity for `intersection`. -}
 full : Interval a
 full = Interval { min = NegInf, max = PosInf }
 
